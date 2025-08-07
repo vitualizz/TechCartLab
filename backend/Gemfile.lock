@@ -163,6 +163,7 @@ GEM
     nokogiri (1.18.9-x86_64-linux-musl)
       racc (~> 1.4)
     ostruct (0.6.3)
+    pagy (9.3.5)
     parallel (1.27.0)
     parser (3.3.9.0)
       ast (~> 2.4.1)
@@ -179,6 +180,9 @@ GEM
     raabro (1.4.0)
     racc (1.8.1)
     rack (3.2.0)
+    rack-cors (3.0.0)
+      logger
+      rack (>= 3.0.14)
     rack-session (2.1.1)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
@@ -316,7 +320,9 @@ DEPENDENCIES
   brakeman
   debug
   kamal
+  pagy
   puma (>= 5.0)
+  rack-cors
   rails (~> 8.0.2)
   rubocop-rails-omakase
   solid_cable
